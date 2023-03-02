@@ -1,0 +1,46 @@
+def somar(v1,v2):
+    r = v1+v2
+    return r
+
+def div(v1,v2):
+    r = v1/v2
+    return r
+
+def mult(v1,v2):
+    r = v1*v2
+    return r
+
+def sub(v1,v2):
+    r = v1-v2
+    return r
+
+ligada = int(input("Digite 0: para desligar| digeite 1 permanecer ligado: "))
+
+while (ligada  == 1):
+    select = input("digete 1-> Somar | digite 2 -> multiplicar | digite 3-> subtrair| digite 4 -> Dividir")
+    ##########################################################################
+    if (select == "1"):
+        a1 = int(input("Digite o primeiro numero: "))
+        a2 = int(input("Digite o segundo numero: "))
+        print(somar(a1,a2))
+    ######################################################################
+    if (select == "2"):
+        a1 = int(input("Digite o primeiro numero: "))
+        a2 = int(input("Digite o segundo numero: "))
+        print(mult(a1,a2))
+    ########################################################################
+    if (select == "3"):
+        a1 = int(input("Digite o primeiro numero: "))
+        a2 = int(input("Digite o segundo numero: "))
+        print(sub(a1,a2))
+    ########################################################################
+    if (select == "4"):
+        a1 = int(input("Digite o primeiro numero: "))
+        a2 = int(input("Digite o segundo numero: "))
+        print(div(a1,a2))
+    else:
+        print("Comando errado")
+
+    ligada = int(input("Digite 0: para desligar| digeite 1 permanecer ligado: "))
+
+print("Programa fechado")
